@@ -1984,22 +1984,21 @@ pre code {
     margin-right: auto;
     margin-left: auto
 }
+@media (max-width:767px){
+    .container{
+        width: 75%;
+    }
+}
 
 @media (min-width:768px) {
     .container {
-        width: 750px
+        width: 50%
     }
 }
 
 @media (min-width:992px) {
     .container {
-        width: 970px
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        width: 1170px
+        width: 50%
     }
 }
 
@@ -2008,11 +2007,6 @@ pre code {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto
-}
-
-.row {
-    margin-right: -15px;
-    margin-left: -15px
 }
 
 .col-lg-1,
@@ -6012,7 +6006,7 @@ a.badge:hover {
 }
 
 .jumbotron .container {
-    max-width: 100%
+    max-width: 75%
 }
 
 @media screen and (min-width:768px) {
@@ -7682,7 +7676,7 @@ button.close {
     margin: 1px;
     text-indent: -999px;
     cursor: pointer;
-    background-color: #000\9;
+    background-color: #000;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #fff;
     border-radius: 10px
