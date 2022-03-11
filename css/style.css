@@ -746,8 +746,9 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.4em;
+    font-weight: 500;
 }
 
 h3 {
