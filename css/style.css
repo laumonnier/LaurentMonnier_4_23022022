@@ -123,7 +123,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("../img/texture-paper.png");
+    background: url("../img/texture-paper_mini.png");
     background-size: 280px 280px;
 }
 
@@ -859,11 +859,11 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("../img/dots-bg.png");
+    background-image: url("../img/dots-bg_resize.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("../img/lines-h2-bg.png");
+    background-image: url("../img/lines-h2-bg_resize.png");
 }
 
 .bg-banniere {
@@ -871,7 +871,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
+    background-image: url("../img/image-de-presentation_resize.jpg");
 }
 
 @media screen and (min-width: 993px) {
