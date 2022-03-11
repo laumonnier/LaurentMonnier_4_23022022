@@ -1476,7 +1476,6 @@ hr {
     padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
     border: 0
 }
 
@@ -1487,7 +1486,6 @@ hr {
     height: auto;
     margin: 0;
     overflow: visible;
-    clip: auto
 }
 
 [role=button] {
@@ -1548,7 +1546,8 @@ h1,
 h2,
 h3 {
     margin-top: 20px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin: 20px auto 10px auto;
 }
 
 .h1 .small,
@@ -1990,12 +1989,6 @@ pre code {
     }
 }
 
-@media (min-width:768px) {
-    .container {
-        width: 50%
-    }
-}
-
 @media (min-width:992px) {
     .container {
         width: 50%
@@ -2036,7 +2029,6 @@ pre code {
 .col-sm-1,
 .col-sm-10,
 .col-sm-11,
-.col-sm-12,
 .col-sm-2,
 .col-sm-3,
 .col-sm-5,
@@ -2074,7 +2066,12 @@ pre code {
     padding-left: 15px;
     margin-bottom: 35px;
 }
-
+.col-sm-12{
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px
+}
 .col-xs-1,
 .col-xs-10,
 .col-xs-11,
@@ -3114,7 +3111,7 @@ input[type=search] {
 input[type=checkbox],
 input[type=radio] {
     margin: 4px 0 0;
-    margin-top: 1px\9;
+    margin-top: 1px;
     line-height: normal
 }
 
@@ -3262,7 +3259,7 @@ input[type=search] {
 .radio input[type=radio],
 .radio-inline input[type=radio] {
     position: absolute;
-    margin-top: 4px\9;
+    margin-top: 4px;
     margin-left: -20px
 }
 
@@ -4298,7 +4295,7 @@ tbody.collapse.in {
     margin-left: 2px;
     vertical-align: middle;
     border-top: 4px dashed;
-    border-top: 4px solid\9;
+    border-top: 4px solid;
     border-right: 4px solid transparent;
     border-left: 4px solid transparent
 }
@@ -4385,7 +4382,6 @@ tbody.collapse.in {
     cursor: not-allowed;
     background-color: transparent;
     background-image: none;
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
 }
 
 .open>.dropdown-menu {
@@ -4434,7 +4430,7 @@ tbody.collapse.in {
     content: "";
     border-top: 0;
     border-bottom: 4px dashed;
-    border-bottom: 4px solid\9
+    border-bottom: 4px solid
 }
 
 .dropup .dropdown-menu,
@@ -4657,7 +4653,6 @@ tbody.collapse.in {
 [data-toggle=buttons]>.btn-group>.btn input[type=checkbox],
 [data-toggle=buttons]>.btn-group>.btn input[type=radio] {
     position: absolute;
-    clip: rect(0, 0, 0, 0);
     pointer-events: none
 }
 
@@ -5136,7 +5131,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     max-height: 340px
 }
 
-@media (max-device-width:480px) and (orientation:landscape) {
+@media (max-width:480px) and (orientation:landscape) {
     .navbar-fixed-bottom .navbar-collapse,
     .navbar-fixed-top .navbar-collapse {
         max-height: 200px
@@ -5429,9 +5424,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
         margin-right: 15px;
         margin-left: 15px
     }
-}
-
-@media (min-width:768px) {
     .navbar-left {
         float: left !important
     }
@@ -5771,7 +5763,6 @@ fieldset[disabled] .navbar-inverse .btn-link:hover {
     color: #777;
     cursor: not-allowed;
     background-color: #fff;
-    border-color: #ddd
 }
 
 .pagination-lg>li>a,
@@ -6167,24 +6158,6 @@ a.thumbnail:hover {
     color: #843534
 }
 
-@-webkit-keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0
-    }
-    to {
-        background-position: 0 0
-    }
-}
-
-@-o-keyframes progress-bar-stripes {
-    from {
-        background-position: 40px 0
-    }
-    to {
-        background-position: 0 0
-    }
-}
-
 @keyframes progress-bar-stripes {
     from {
         background-position: 40px 0
@@ -6427,9 +6400,7 @@ button.list-group-item {
     color: inherit
 }
 
-.list-group-item.active .list-group-item-text,
-.list-group-item.active:focus .list-group-item-text,
-.list-group-item.active:hover .list-group-item-text {
+.list-group-item.active .list-group-item-text{
     color: #c7ddef
 }
 
@@ -6457,11 +6428,7 @@ button.list-group-item-success:hover {
 }
 
 a.list-group-item-success.active,
-a.list-group-item-success.active:focus,
-a.list-group-item-success.active:hover,
-button.list-group-item-success.active,
-button.list-group-item-success.active:focus,
-button.list-group-item-success.active:hover {
+button.list-group-item-success.active{
     color: #fff;
     background-color: #3c763d;
     border-color: #3c763d
@@ -6491,11 +6458,7 @@ button.list-group-item-info:hover {
 }
 
 a.list-group-item-info.active,
-a.list-group-item-info.active:focus,
-a.list-group-item-info.active:hover,
-button.list-group-item-info.active,
-button.list-group-item-info.active:focus,
-button.list-group-item-info.active:hover {
+button.list-group-item-info.active {
     color: #fff;
     background-color: #31708f;
     border-color: #31708f
@@ -6525,11 +6488,7 @@ button.list-group-item-warning:hover {
 }
 
 a.list-group-item-warning.active,
-a.list-group-item-warning.active:focus,
-a.list-group-item-warning.active:hover,
-button.list-group-item-warning.active,
-button.list-group-item-warning.active:focus,
-button.list-group-item-warning.active:hover {
+button.list-group-item-warning.active{
     color: #fff;
     background-color: #8a6d3b;
     border-color: #8a6d3b
@@ -6559,11 +6518,7 @@ button.list-group-item-danger:hover {
 }
 
 a.list-group-item-danger.active,
-a.list-group-item-danger.active:focus,
-a.list-group-item-danger.active:hover,
-button.list-group-item-danger.active,
-button.list-group-item-danger.active:focus,
-button.list-group-item-danger.active:hover {
+button.list-group-item-danger.active{
     color: #fff;
     background-color: #a94442;
     border-color: #a94442
@@ -7844,10 +7799,6 @@ button.close {
 
 .affix {
     position: fixed
-}
-
-@-ms-viewport {
-    width: device-width
 }
 
 .visible-lg,
