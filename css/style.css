@@ -32,7 +32,7 @@ h2{
 }
 
 .demonstration_subtitle{
-    font-size: 13px;
+    font-size: 15px;
 }
 
 a,
@@ -316,7 +316,8 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 40px;
+    font-size: 46px;
+    font-weight: 500;
 }
 
 .navbar {
@@ -699,7 +700,7 @@ label{
 }
 
 .hero-bloc-text {
-    font-size: 38px;
+    font-size: 48px;
 
 }
 
@@ -718,7 +719,7 @@ label{
 }
 
 p {
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .tight-width-whitespace {
@@ -746,13 +747,13 @@ p {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 27px;
     line-height: 1.4em;
     font-weight: 500;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 17px;
     text-transform: uppercase;
     max-width: 270px;
     font-weight: 700;
@@ -804,7 +805,7 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
-    font-size: 19px;
+    font-size: 21px;
 }
 
 .bgc-white {
@@ -876,7 +877,7 @@ h4 {
 
 @media screen and (min-width: 993px) {
     .container {
-        width: 60%;  
+        width: 70%;  
     }
     .bloc {
         padding-left: 20px;
@@ -959,12 +960,12 @@ h4 {
         padding-right: 10px!important;
     }
     h2 {
-        font-size: 19px;
+        font-size: 21px;
         line-height: 1.1em;
     }
     
     h3 {
-        font-size: 14px;
+        font-size: 16px;
         text-transform: uppercase;
         font-weight: 700;
         color: #333333!important;
