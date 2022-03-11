@@ -81,11 +81,11 @@ a:hover {
 }
 
 .bloc-md {
-    padding: 50px;
+    padding: 20px;
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 20px 0px;
 }
 
 .bg-center,
@@ -128,7 +128,7 @@ a:hover {
 }
 
 .b-parallax {
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 .d-bloc {
@@ -326,7 +326,7 @@ a:hover {
 
 .navbar-brand {
     height: auto;
-    padding: 3px 15px;
+    padding: 3px 30px;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
@@ -370,7 +370,7 @@ a:hover {
 }
 
 .navbar-toggle {
-    margin: 10px 10px 0 0;
+    margin: 10px 30px 0 0;
     border: 0px;
 }
 
@@ -688,11 +688,13 @@ label{
     font-size: 15.5px;
 }
 
-.header-container{
+@media (min-width: 0px){
+    .header-container{
     width: 95%;
+    }
 }
 .container {
-    width: 50%;
+    width: 60%;
     
 }
 
@@ -716,12 +718,12 @@ label{
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
-    font-size: 14px;
-    max-width: 600px;
+    font-size: 16px;
+    width: 100%;
     margin: auto auto auto auto;
 }
 
@@ -780,6 +782,7 @@ h4 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    margin: auto;
 }
 
 .portfolio-row {
@@ -799,6 +802,7 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+    font-size: 19px;
 }
 
 .bgc-white {
@@ -883,6 +887,9 @@ h4 {
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
+    .container {
+        width: 75%;  
+    }
     .navbar .nav {
         max-width: 75%
     }
@@ -904,15 +911,11 @@ h4 {
 }
 
 @media (max-width: 991px) {
-    .container {
-        width: 75%;
-    }
     .b-parallax {
         background-attachment: scroll;
     }
     .page-container,
     #hero-bloc {
-        overflow-x: hidden;
         position: relative;
     }
     .bloc {
@@ -933,8 +936,17 @@ h4 {
 }
 
 @media (max-width: 767px) {
+    .container {
+        width: 85%;  
+    }
+    .header-container{
+        width: 100%;
+    }
     .page-container {
         position: relative;
+    }
+    #bloc-1-hero h1 {
+        font-size: 32px;
     }
     h1,
     h2,
@@ -946,6 +958,35 @@ h4 {
     #disqus_thread {
         padding-left: 10px!important;
         padding-right: 10px!important;
+    }
+    h2 {
+        font-size: 19px;
+        line-height: 1.1em;
+    }
+    
+    h3 {
+        font-size: 14px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #333333!important;
+    }
+    .quote{
+        text-align: center;
+        font-size: 1.18em;
+    }
+    .personal-quote{
+        font-family: Roboto;
+        text-align: center;
+        font-size: 1.18em;
+        font-weight: 300;
+    }
+    .cta-hero {
+        margin-top: 22px;
+        color: #FFFFFF!important;
+        text-transform: uppercase;
+        padding: 12px 28px 12px 28px;
+        font-size: 17px;
+        font-weight: 700;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -1022,7 +1063,7 @@ h4 {
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
-        padding: 40px 0;
+        padding: 30px 0;
     }
     .bloc-sm,
     .bloc-md {

@@ -1427,7 +1427,7 @@ figure {
 }
 
 img {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .carousel-inner>.item>a>img,
@@ -2039,9 +2039,7 @@ pre code {
 .col-sm-12,
 .col-sm-2,
 .col-sm-3,
-.col-sm-4,
 .col-sm-5,
-.col-sm-6,
 .col-sm-7,
 .col-sm-8,
 .col-sm-9,
@@ -2061,6 +2059,20 @@ pre code {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px
+}
+.col-sm-4{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 35px;
+}
+.col-sm-6{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 35px;
 }
 
 .col-xs-1,
@@ -2480,7 +2492,7 @@ pre code {
         width: 75%
     }
     .col-md-8 {
-        width: 66.66666667%
+        width: 100%
     }
     .col-md-7 {
         width: 58.33333333%
@@ -2612,7 +2624,7 @@ pre code {
         margin-left: 25%
     }
     .col-md-offset-2 {
-        margin-left: 16.66666667%
+        margin-left: 0%
     }
     .col-md-offset-1 {
         margin-left: 8.33333333%
@@ -3016,6 +3028,12 @@ table th[class*=col-] {
 }
 
 @media screen and (max-width:767px) {
+    .col-sm-4{
+        position: relative;
+        min-height: 1px;
+        padding-right: 75px;
+        padding-left: 75px
+    }
     .table-responsive {
         width: 100%;
         margin-bottom: 15px;
